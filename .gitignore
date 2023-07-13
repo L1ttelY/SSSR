@@ -396,3 +396,9 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+Assets/Models/Cottage/cottage_diffuse.png
+Assets/Models/Cottage/cottage_normal.png
+Assets/Models/Cottage/cottage_obj.mtl
+Assets/Models/Cottage2/Cottage_Clean_Base_Color.png
+Assets/Models/Cottage2/Cottage_Clean_Normal.png
+Assets/Models/Cottage2/Cottage_FREE.mtl
