@@ -109,7 +109,6 @@ namespace CGTest {
 		void OnInitScene(){
 
 			texture0=new Texture(FileUtils.AssetPath+"Textures/grass.jpg");
-			texture1=new Texture(FileUtils.AssetPath+"Models/Cottage2/Cottage_Clean_Normal.png");
 			MaterialDefault materialDefault = new MaterialDefault();
 			//materialDefault.normalMap=texture1;
 			materialDefault.diffuseMap=texture0;
@@ -153,28 +152,28 @@ namespace CGTest {
 			cubeRenderer.material=materialDefault;
 			cube.AddComponent(cubeRenderer);
 			cube.LocalRotationEuler=new Vector3(0,0,-1);
-			cube.LocalPosition=new Vector3(0,-20,0);
+			cube.LocalPosition=new Vector3(0,10,0);
 			Light directionalLight = new Light();
 			directionalLight.mode=Light.LightMode.Directional;
 			directionalLight.color=new Vector3(0.4f,0.4f,0.4f);
 			cube.AddComponent(directionalLight);
 
 			Transform mesh = new Transform();
-			MeshData meshData = ObjFile.ReadFile(FileUtils.AssetPath+@"Models/Cottage2/Cottage_FREE.obj");
+			//MeshData meshData = ObjFile.ReadFile(FileUtils.AssetPath+@"Models/Cottage2/Cottage_FREE.obj");
 			mesh.parent=root;
 			mesh.LocalPosition=Vector3.One*3;
 			MeshRenderer meshRenderer = new MeshRenderer();
-			meshRenderer.meshData=meshData;
-			mesh.AddComponent(meshRenderer);
+			//meshRenderer.meshData=meshData;
+			//mesh.AddComponent(meshRenderer);
 			mesh.LocalPosition=new Vector3(0,-0.125f,15);
 
 			Transform mesh2 = new Transform();
-			meshData=ObjFile.ReadFile(FileUtils.AssetPath+@"Models/Cottage/cottage_obj.obj");
+			//meshData=ObjFile.ReadFile(FileUtils.AssetPath+@"Models/Cottage/cottage_obj.obj");
 			mesh2.parent=root;
 			mesh2.LocalPosition=Vector3.One*3;
 			MeshRenderer meshRenderer2 = new MeshRenderer();
-			meshRenderer2.meshData=meshData;
-			mesh2.AddComponent(meshRenderer2);
+			//meshRenderer2.meshData=meshData;
+			//mesh2.AddComponent(meshRenderer2);
 			mesh2.LocalPosition=new Vector3(50,-0.1f,0);
 
 			Transform terrain = new Transform();
