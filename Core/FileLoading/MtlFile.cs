@@ -69,6 +69,6 @@ namespace CGTest {
 			return result;
 		}
 
-
+		 
 	}
 }

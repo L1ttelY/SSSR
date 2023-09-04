@@ -81,10 +81,6 @@ namespace CGTest {
 			GC.SuppressFinalize(this);
 		}
 
-		public void SetTexture() {
-
-		}
-
 		public void SetMatrix4(string name,Matrix4 value) {
 			GL.UniformMatrix4(GL.GetUniformLocation(Handle,name),false,ref value);
 		}
